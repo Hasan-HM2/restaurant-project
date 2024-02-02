@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.my-nav {
+    font-size: 22px !important;
+}
+
+label {
+    display: flex !important;
+    justify-content: left !important;
+}
+
+.carousel-info {
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 20px;
+    width: max-content;
+    margin: auto;
+    padding: 30px;
+}
+
+.checked {
+    color: orange;
+  }
+
+.social {
+    position: fixed;
+    top: 6rem;
+    right: 10px;
+    width: 50px;
+    z-index: 100;
+    height: 40px;
+    font-size: 30px;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social ul li i {
+    color: white;
+    background-color: #024a89;
+    padding: 8px;
+    border-radius: 11px;
+}
+
+@media (max-width:567px) {
+    .my-img {
+        height: 500px !important;
+    }
+}
+
+.fixed-bg {
+    margin: 50px 0px;
+    background-image: url(../images/fixed-bg.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: bottom; 
+}
+
+/* what-new */
+.what-new {
+    transition: .3s;
+}
+
+.what-new:hover {
+    background-color: aliceblue !important;
+    color: black !important;
+}
+
+.dessert-container {
+    position: relative;
+}
+
+.overlay::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.237);
+    transition: .3s;
+}
+
+.overlay:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.237);
+    transition: .3s;
+}
+
+.overlay:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+/* History Informaition */
+@media (max-width: 567px) {
+    .info-container {
+        width: max-content;
+    }
+}
+
+.info-container {
+    width: 80%;
+    margin: auto;
+    height: 270px;
+    box-shadow: 0px 0px 20px gray;
+    position: relative;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.info-div {
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    transform: skew(-10deg);
+    z-index: 3;
+    right: 25%;
+    background-color: white;
+}
+
+.info-img {
+    background: url(../images/fixed-bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    right: 0px;
+    transition: .3s;
+}
+
+.info-div span {
+    position: relative;
+}
+
+.info-container:hover .info-img {
+    transform: scale(1.2);
+}
+
+.info-div span::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #004e92;
+    bottom: -8px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.info-container2 {
+    width: 80%;
+    margin: auto;
+    height: 270px;
+    box-shadow: 0px 0px 20px gray;
+    position: relative;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.info-container2 .info-img {
+    background: url(../images/fixed-bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    left: 0px;
+}
+
+.info-container2:hover .info-img {
+    transform: scale(1.2);
+}
+
+.info-div:hover span::after {
+    width: 90%;
+}
+
+.info-container2 .info-div {
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    transform: skew(10deg);
+    z-index: 3;
+    right: 0%;
+    background-color: white;
+    left: 25%;
+}
+
+/* comments */
+.comment-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comment {
+    margin-bottom: 20px;
+  }
+  
+  .comment-author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .comment-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .comment-content {
+    margin-top: 5px;
+  }
+
+  
+/* footer */
+.desiner {
+    cursor: pointer;
+}
+
+ .social-list-footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+ }
